@@ -375,6 +375,84 @@ nav[aria-label="breadcrumb"] {
 
 
 /*---------------------------------------
+  JOB CARD TYPOGRAPHY               
+-----------------------------------------*/
+.job-title {
+    font-size: 1.75rem;  /* Larger size */
+    font-weight: 700;    /* Bolder weight */
+    color: var(--dark-color);
+    margin-bottom: 1rem;
+    line-height: 1.3;
+}
+
+.job-card h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+}
+
+.job-list-detail h4 a {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--dark-color);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.job-list-detail h4 a:hover {
+    color: var(--primary-color);
+}
+
+/* Ensure job meta details remain secondary */
+.job-location,
+.job-date {
+    font-size: 0.9rem;
+    color: var(--p-color);
+}
+
+/* Remote Badge Styling */
+.badge-remote {
+    background-color: #198754;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    display: inline-flex;
+    align-items: center;
+    margin-left: 8px;
+    letter-spacing: 1px;
+    line-height: 1;
+}
+
+.badge-remote::before {
+    content: "REMOTE";
+}
+
+.job-featured .badge-remote {
+    background-color: #20c997;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.badge-remote {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 5px 10px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-left: 10px;
+    letter-spacing: 0.5px;
+}
+
+.badge-remote:empty {
+    display: none;
+}
+
+/*---------------------------------------
   CUSTOM BUTTON               
 -----------------------------------------*/
 .custom-btn {
@@ -386,6 +464,43 @@ nav[aria-label="breadcrumb"] {
   font-weight: var(--font-weight-normal);
   line-height: normal;
   padding: 15px 20px;
+}
+
+/* Primary Menu & Button Colors */
+.custom-btn {
+    background-color: #198754;
+    color: #ffffff;
+    border-color: #198754;
+    transition: all 0.3s ease;
+}
+
+.nav-link.custom-btn:hover,
+.custom-btn:hover {
+    background-color: #146c43;
+    border-color: #146c43;
+    color: #ffffff;
+}
+
+.custom-border-btn {
+    border: 2px solid #198754;
+    color: #198754;
+}
+
+.custom-border-btn:hover {
+    background-color: #198754;
+    color: #ffffff;
+}
+
+/* Form submit buttons */
+.form-control button[type="submit"] {
+    background-color: #198754;
+    border-color: #198754;
+}
+
+/* Newsletter form button */
+.newsletter-form button {
+    background-color: #198754;
+    border-color: #198754;
 }
 
 .custom-btn:hover,
@@ -1002,8 +1117,24 @@ nav[aria-label="breadcrumb"] {
   box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
 }
 
+/* Job Card Typography */
 .job-title-link {
-  color: var(--dark-color);
+    color: var(--dark-color);
+    font-size: var(--h5-font-size);  /* Increased from default */
+    font-weight: var(--font-weight-bold);
+    line-height: 1.3;
+    margin-bottom: 12px;
+    display: block;
+}
+
+.job-title-link:hover {
+    color: var(--primary-color);
+}
+
+.job-thumb .job-body h4 {
+    font-size: var(--h5-font-size);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: 8px;
 }
 
 .job-thumb p {
